@@ -4,7 +4,7 @@ on:
 
   push:
     branches:
-      - master
+      - main
       
   schedule:
   - cron: "0 6 * * *" # See https://crontab.guru/#0_7,9,11,17,20_*_*_*
@@ -50,4 +50,4 @@ jobs:
         with:
           force: true
           directory: "."
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
